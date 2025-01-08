@@ -10,6 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
       default: t("title"),
     },
     description: t("description"),
+    keywords: t('keywords'),
   };
 }
 
