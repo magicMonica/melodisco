@@ -67,7 +67,7 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 ## Contact Information
 
-To ask questions or comment about this Privacy Policy and our privacy practices, contact us at: [support@thinkany.ai](mailto:support@thinkany.ai). 
+To ask questions or comment about this Privacy Policy and our privacy practices, contact us at: [calkinzybjog@gmail.com](mailto:calkinzybjog@gmail.com). 
 `;
   return (
     <div>

@@ -82,9 +82,9 @@ export default function () {
 
       <div className="mr-8">
         <Link href="/" className="flex items-center gap-x-2 font-semibold">
-          <img src="/logo.png" className="w-16 h-16" />
+          <img src="/sleeping-music-logo.png" className="w-16 h-16" />
           <span className="hidden md:block text-2xl font-medium">
-            Melodisco
+            Sleeping Music
           </span>
         </Link>
       </div>

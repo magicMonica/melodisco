@@ -193,7 +193,7 @@ export async function getLatestSongs(page: number) {
 
 export async function getSongInfo(ids: string[]) {
   try {
-    const uri = `${apiBaseUri}/api/feed/?ids=${encodeURIComponent(
+    const uri = `${apiBaseUri}/api/feed/v2?ids=${encodeURIComponent(
       ids.join(",")
     )}`;
     const headers = await getReqHeaders();
@@ -231,7 +231,8 @@ export async function getJwtToken() {
   try {
     const sessionId = process.env.SUNO_SESSION_ID;
 
-    const uri = `https://clerk.suno.com/v1/client/sessions/${sessionId}/tokens?_clerk_js_version=4.70.5`;
+    // const uri = `https://clerk.suno.com/v1/client/sessions/${sessionId}/tokens?_clerk_js_version=4.70.5`;
+    const uri = `https://clerk.suno.com/v1/client/sessions/${sessionId}/tokens?__clerk_api_version=2024-10-01&_clerk_js_version=5.43.2`;
 
     const headers: any = {
       cookie: process.env.SUNO_COOKIE,
@@ -240,6 +241,8 @@ export async function getJwtToken() {
       referer: "https://suno.com/",
     };
 
+    console.log("uri:", uri);
+    console.log("headers:", headers);
     const resp = await fetch(uri, {
       method: "POST",
       headers: headers,
@@ -254,7 +257,7 @@ export async function getJwtToken() {
 
     console.log("get jwt token failed: ", resp);
 
-    return "";
+    return "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yT1o2eU1EZzhscWRKRWloMXJvemY4T3ptZG4iLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzdW5vLWFwaSIsImF6cCI6Imh0dHBzOi8vc3Vuby5jb20iLCJleHAiOjE3MzYyMzU4NjIsImZ2YSI6WzM4OTcsLTFdLCJodHRwczovL3N1bm8uYWkvY2xhaW1zL2NsZXJrX2lkIjoidXNlcl8ya0VOSXlaQ2ZiV05UcU95bUIyVlNFNGpUT2UiLCJodHRwczovL3N1bm8uYWkvY2xhaW1zL2VtYWlsIjoiY2Fsa2luenliam9nQGdtYWlsLmNvbSIsImh0dHBzOi8vc3Vuby5haS9jbGFpbXMvcGhvbmUiOm51bGwsImlhdCI6MTczNjIzNTgwMiwiaXNzIjoiaHR0cHM6Ly9jbGVyay5zdW5vLmNvbSIsImp0aSI6ImExMGYwNWNlZTVkYmE3NmU5MjkxIiwibmJmIjoxNzM2MjM1NzkyLCJzaWQiOiJzZXNzXzJyQVZjMUdNcjc2UWUxc09PRzRRc1BOMFVPSSIsInN1YiI6InVzZXJfMmtFTkl5WkNmYldOVHFPeW1CMlZTRTRqVE9lIn0.f8fUSdMc_XgyO29AE9W9IYEmEtrVNG8UzvUFkzYWWvsuNThq0U0s6QYcbpaUmgMAVDAPfRlAsObOmOuf0ZrhHLiynWyHKKHDWc2gkf5ljPiZhc9xvww3MupYbBQbPdj67O8sd_CFGmvEOt-nKVBsQTKqDjYuOErJKHEy0z7dIhVQxrLLVB7Pz_zGRjE7kAwCQMu4BMGYVErkF2-_e_vWU4ypdwXdlJ9jW7_rX_33-qTrA7HcgxZvNfX03hrzq5zK3UnMc7YdDuLjq6V-7UQDP_EzCOqZ8NAg4qJ1cMFOVQYkRlgF8dMJBzw9LjJFotEX-7OwfU32uKd11cbwNxTAIw";
   } catch (e) {
     console.log("get jwt token failed: ", e);
     return "";
@@ -264,6 +267,7 @@ export async function getJwtToken() {
 async function getReqHeaders(): Promise<any> {
   const userAgent = process.env.SUNO_UA;
   const token = await getJwtToken();
+  // const token = "eyJhbGciOiJSUzI1NiIsImNhdCI6ImNsX0I3ZDRQRDExMUFBQSIsImtpZCI6Imluc18yT1o2eU1EZzhscWRKRWloMXJvemY4T3ptZG4iLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJzdW5vLWFwaSIsImF6cCI6Imh0dHBzOi8vc3Vuby5jb20iLCJleHAiOjE3MzYyMzYzMTgsImZ2YSI6WzM5MDUsLTFdLCJodHRwczovL3N1bm8uYWkvY2xhaW1zL2NsZXJrX2lkIjoidXNlcl8ya0VOSXlaQ2ZiV05UcU95bUIyVlNFNGpUT2UiLCJodHRwczovL3N1bm8uYWkvY2xhaW1zL2VtYWlsIjoiY2Fsa2luenliam9nQGdtYWlsLmNvbSIsImh0dHBzOi8vc3Vuby5haS9jbGFpbXMvcGhvbmUiOm51bGwsImlhdCI6MTczNjIzNjI1OCwiaXNzIjoiaHR0cHM6Ly9jbGVyay5zdW5vLmNvbSIsImp0aSI6IjBiNjc3YTlkMGY2OTU0ODNjOTc3IiwibmJmIjoxNzM2MjM2MjQ4LCJzaWQiOiJzZXNzXzJyQVZjMUdNcjc2UWUxc09PRzRRc1BOMFVPSSIsInN1YiI6InVzZXJfMmtFTkl5WkNmYldOVHFPeW1CMlZTRTRqVE9lIn0.sVD5M5R5MntOvJ_fEJyj0TExxmxlPN2jOr8oYKmUV4Pk-u55W2IUhfQZa6SRsPg94MM5CK0lptmqCmWtlnBg_xQuDONzzlyqqRng9khBal0ByQv4B07xpBxNMRSoSZfl6ZdDGUIO6-Ky75-u_MyqCvWusmzx48aycpfTd3Bo1nhTS09E0EidS_1QxqfN0UIvbrFw3SwAxdfBsYi98JFCGLoGUh0yNQtMj_j5WFBQ8kqQ1ZQVgQnjCgeadWdfbdDdWb7tBQ-9MXsHayLI1gasKFj89SQ_7Zy5-dQjbSqBp5kEPtT3X8p5eViYL4BekgZM1LD0wrDL80xV4yfhQugbTw";
 
   const headers = {
     "user-agent": userAgent,

@@ -36,15 +36,15 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
 
-        <link rel="alternate" hrefLang="en" href="https://melodis.co" />
-        <link rel="alternate" hrefLang="ja" href="https://melodis.co/ja/" />
-        <link rel="alternate" hrefLang="de" href="https://melodis.co/de/" />
-        <link rel="alternate" hrefLang="ko" href="https://melodis.co/ko/" />
-        <link rel="alternate" hrefLang="ru" href="https://melodis.co/ru/" />
-        <link rel="alternate" hrefLang="fr" href="https://melodis.co/fr/" />
-        <link rel="alternate" hrefLang="zh" href="https://melodis.co/zh/" />
-        <link rel="alternate" hrefLang="ar" href="https://melodis.co/ar/" />
-        <link rel="alternate" hrefLang="x-default" href="https://melodis.co" />
+        <link rel="alternate" hrefLang="en" href="https://sleepingmusic.org" />
+        <link rel="alternate" hrefLang="ja" href="https://sleepingmusic.org/ja/" />
+        <link rel="alternate" hrefLang="de" href="https://sleepingmusic.org/de/" />
+        <link rel="alternate" hrefLang="ko" href="https://sleepingmusic.org/ko/" />
+        <link rel="alternate" hrefLang="ru" href="https://sleepingmusic.org/ru/" />
+        <link rel="alternate" hrefLang="fr" href="https://sleepingmusic.org/fr/" />
+        <link rel="alternate" hrefLang="zh" href="https://sleepingmusic.org/zh/" />
+        <link rel="alternate" hrefLang="ar" href="https://sleepingmusic.org/ar/" />
+        <link rel="alternate" hrefLang="x-default" href="https://sleepingmusic.org" />
 
         <script
           async

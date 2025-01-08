@@ -66,14 +66,14 @@ These Terms are governed by the laws of the jurisdiction in which Melodisco is l
 
 ## Contact Us
 
-If you have any questions about these Terms, please contact us at [support@thinkany.ai](mailto:support@thinkany.ai). 
+If you have any questions about these Terms, please contact us at [calkinzybjog@gmail.com](mailto:calkinzybjog@gmail.com). 
 `;
 
   return (
     <div>
       <a className="text-base-content cursor-pointer" href="/">
         <MdOutlineHome className="text-2xl mx-8 my-8" />
-        {/* <img className="w-10 h-10 mx-4 my-4" src="/logo.png" /> */}
+        {/* <img className="w-10 h-10 mx-4 my-4" src="/sleeping-music-logo.png" /> */}
       </a>
       <div className="max-w-3xl mx-auto leading-loose pt-4 pb-8 px-8">
         <Markdown content={content} />

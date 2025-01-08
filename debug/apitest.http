@@ -1,5 +1,5 @@
 @baseUri=http://localhost:8023/api
-# @baseUri=https://melodis.co/api
+# @baseUri=https://sleepingmusic.org/api
 
 ### update songs
 POST {{baseUri}}/process/update-songs
