@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "SleepingMusic.com - AI плеер для сна и релаксации",
-    "description": "SleepingMusic.com - это AI музыкальный плеер и генератор для сна. Исследуйте успокаивающие мелодии, созданные AI от Suno, и создавайте свои собственные AI песни для сна.",
+    "title": "SleepingMusic.org - AI плеер для сна и релаксации",
+    "description": "SleepingMusic.org - это AI музыкальный плеер и генератор для сна. Исследуйте успокаивающие мелодии, созданные AI от Suno, и создавайте свои собственные AI песни для сна.",
     "keywords": "AI музыкальный плеер, AI музыкальный генератор, AI песни для сна, AI мелодии, AI музыкальный плеер, AI музыкальный генератор, AI музыкальный плеер, AI музыкальный генератор",
-    "discover_title": "Откройте для себя AI песни для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "discover_description": "Откройте для себя трендовые, новейшие и случайные AI песни для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "trending_title": "Трендовые AI песни для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "trending_description": "Топ 50 трендовых AI песен для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "newest_title": "Новейшие AI песни для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "newest_description": "Топ 50 новейших AI песен для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "roaming_title": "Случайные AI песни для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "roaming_description": "50 случайных AI песен для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "song_title": "%s: AI песня для сна в SleepingMusic.com - AI плеер для сна и релаксации",
-    "song_description": "%s: AI песня для сна, созданная Suno, играет в SleepingMusic.com - AI плеер для сна и релаксации"
+    "discover_title": "Откройте для себя AI песни для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "discover_description": "Откройте для себя трендовые, новейшие и случайные AI песни для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "trending_title": "Трендовые AI песни для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "trending_description": "Топ 50 трендовых AI песен для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "newest_title": "Новейшие AI песни для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "newest_description": "Топ 50 новейших AI песен для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "roaming_title": "Случайные AI песни для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "roaming_description": "50 случайных AI песен для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "song_title": "%s: AI песня для сна в SleepingMusic.org - AI плеер для сна и релаксации",
+    "song_description": "%s: AI песня для сна, созданная Suno, играет в SleepingMusic.org - AI плеер для сна и релаксации"
   },
   "brand": {
-    "name": "SleepingMusic.com",
+    "name": "SleepingMusic.org",
     "tagline": "AI плеер для сна и релаксации, откройте для себя успокаивающие песни, созданные AI"
   },
   "user": {

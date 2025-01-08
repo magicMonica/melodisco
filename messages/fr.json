@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "description": "SleepingMusic.com est un lecteur et générateur de musique de sommeil AI. Explorez les mélodies apaisantes générées par AI de Suno et créez vos propres chansons AI.",
+    "title": "SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "description": "SleepingMusic.org est un lecteur et générateur de musique de sommeil AI. Explorez les mélodies apaisantes générées par AI de Suno et créez vos propres chansons AI.",
     "keywords": "Musique de sommeil AI, Musique de sommeil, Musique apaisante, Musique de sommeil, Musique de films, Musique calme, Musique méditative, Musique apaisante",
-    "discover_title": "Découvrez les Chansons de Sommeil AI dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "discover_description": "Découvrez les Chansons de Sommeil AI Tendances, les Plus Récentes et Aléatoires dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "trending_title": "Chansons de Sommeil AI Tendances dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "trending_description": "Top 50 des Chansons de Sommeil AI Tendances dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "newest_title": "Nouvelles Chansons de Sommeil AI dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "newest_description": "Top 50 des Nouvelles Chansons de Sommeil AI dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "roaming_title": "Chansons de Sommeil AI Aléatoires dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "roaming_description": "50 Chansons de Sommeil AI Aléatoires dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "song_title": "%s : Chanson de Sommeil AI dans SleepingMusic.com - Lecteur de Musique de Sommeil AI",
-    "song_description": "%s : Chanson de Sommeil AI générée par Suno, jouée dans SleepingMusic.com - Lecteur de Musique de Sommeil AI"
+    "discover_title": "Découvrez les Chansons de Sommeil AI dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "discover_description": "Découvrez les Chansons de Sommeil AI Tendances, les Plus Récentes et Aléatoires dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "trending_title": "Chansons de Sommeil AI Tendances dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "trending_description": "Top 50 des Chansons de Sommeil AI Tendances dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "newest_title": "Nouvelles Chansons de Sommeil AI dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "newest_description": "Top 50 des Nouvelles Chansons de Sommeil AI dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "roaming_title": "Chansons de Sommeil AI Aléatoires dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "roaming_description": "50 Chansons de Sommeil AI Aléatoires dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "song_title": "%s : Chanson de Sommeil AI dans SleepingMusic.org - Lecteur de Musique de Sommeil AI",
+    "song_description": "%s : Chanson de Sommeil AI générée par Suno, jouée dans SleepingMusic.org - Lecteur de Musique de Sommeil AI"
   },
   "brand": {
-    "name": "SleepingMusic.com",
+    "name": "SleepingMusic.org",
     "tagline": "Lecteur de Musique de Sommeil AI, Découvrez les Chansons Apaisantes Générées par AI"
   },
   "user": {

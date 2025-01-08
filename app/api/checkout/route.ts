@@ -87,7 +87,7 @@ export async function POST(req: Request) {
       ],
       allow_promotion_codes: false,
       metadata: {
-        project: "SleepingMusic.com",
+        project: "SleepingMusic.org",
         pay_scene: "buy-credits",
         order_no: order_no.toString(),
         user_email: user_email,
