@@ -128,7 +128,7 @@ export default function () {
         <Locales />
       </div>
 
-      <User />
+      {/* <User /> */}
     </header>
   );
 }
