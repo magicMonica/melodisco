@@ -40,13 +40,13 @@ export default function ({ song }: { song: Song }) {
         <p className="text-md">{song.tags}</p>
         <p className="text-md">
           {moment(song.created_at).format("MMMM Do, YYYY")}
-          <span
+          {/* <span
             className={`badge ml-1 ${
               song.provider === "udio" ? "bg-red-500 text-white" : "bg-primary"
             }`}
           >
             {song.provider}
-          </span>
+          </span> */}
         </p>
 
         <div className="mt-2 flex gap-x-2 md:gap-x-4 text-md text-base-content">

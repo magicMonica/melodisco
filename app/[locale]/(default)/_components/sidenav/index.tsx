@@ -141,12 +141,12 @@ export default function () {
           <div className="space-y-1 w-40">{Navs(musicNavs)}</div>
         </div>
 
-        <div className="px-3 py-2">
+        {/* <div className="px-3 py-2">
           <p className="mb-2 px-4 text-sm font-semibold tracking-tight">
             {t("library")}
           </p>
           <div className="space-y-1 w-40">{Navs(libraryNavs)}</div>
-        </div>
+        </div> */}
 
         {/* <div className="px-3 py-2">
           <p className="mb-2 px-4 text-sm font-semibold tracking-tight">

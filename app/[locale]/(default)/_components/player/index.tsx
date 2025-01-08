@@ -469,7 +469,12 @@ export default function () {
 
                 <p className="">
                   {formatTime(currentTime)} / {formatTime(duration)}
-                  <span
+                  {/* <span
+                    className={`badge ml-1 bg-primary text-white`}
+                  >
+                    {song.tags}
+                  </span> */}
+                  {/* <span
                     className={`badge ml-1 ${
                       song.provider === "udio"
                         ? "bg-red-500 text-white"
@@ -477,7 +482,7 @@ export default function () {
                     }`}
                   >
                     {song.provider}
-                  </span>
+                  </span> */}
                 </p>
               </div>
             </div>

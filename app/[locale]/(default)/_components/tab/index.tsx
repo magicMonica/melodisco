@@ -16,7 +16,7 @@ export default function ({ type }: { type: string }) {
       >
         All
       </Link>
-      <Link
+      {/* <Link
         href={`/${type}/suno-ai-songs`}
         className={`tab ${
           pathname.endsWith("suno-ai-songs") ? "bg-primary text-white" : ""
@@ -31,7 +31,7 @@ export default function ({ type }: { type: string }) {
         }`}
       >
         Udio AI Songs
-      </Link>
+      </Link> */}
     </div>
   );
 }

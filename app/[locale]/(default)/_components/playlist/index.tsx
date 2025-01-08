@@ -128,7 +128,7 @@ export default function ({
 
                     <TableCell className="font-medium max-w-[120px] md:max-w-sm truncate">
                       <p>{song.tags}</p>
-                      <div
+                      {/* <div
                         className={`badge mt-1 ${
                           song.provider === "udio"
                             ? "bg-red-500 text-white"
@@ -136,7 +136,7 @@ export default function ({
                         }`}
                       >
                         {song.provider || "suno"}
-                      </div>
+                      </div> */}
                     </TableCell>
 
                     <TableCell className="hidden md:table-cell">
