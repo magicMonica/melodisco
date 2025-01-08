@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "SleepingMusic.com - AI 音乐播放器",
+    "title": "SleepingMusic.com - AI 助眠音乐播放器",
     "description": "SleepingMusic.com 是一个 AI 音乐播放器和生成器。探索Suno生成的AI旋律，并创作你自己的AI歌曲。",
-    "discover_title": "发现 | SleepingMusic.com - AI 音乐播放器",
-    "discover_description": "在SleepingMusic.com - AI音乐播放器中发现流行的、最新的和随机的AI歌曲",
-    "trending_title": "流行 | SleepingMusic.com - AI 音乐播放器",
-    "trending_description": "SleepingMusic.com - AI音乐播放器中前50热门AI歌曲",
-    "newest_title": "最新音乐 | SleepingMusic.com - AI 音乐播放器",
-    "newest_description": "SleepingMusic.com - AI音乐播放器中前50最新AI歌曲",
-    "roaming_title": "随机播放 | SleepingMusic.com - AI 音乐播放器",
-    "roaming_description": "SleepingMusic.com - AI音乐播放器中的50首随机AI歌曲",
-    "song_title": "%s：在 SleepingMusic.com - AI 音乐播放器中的歌曲",
-    "song_description": "%s：由Suno生成的AI歌曲，在SleepingMusic.com - AI音乐播放器中播放"
+    "discover_title": "发现 | SleepingMusic.com - AI 助眠音乐播放器",
+    "discover_description": "在SleepingMusic.com - AI助眠音乐播放器中发现流行的、最新的和随机的AI歌曲",
+    "trending_title": "流行 | SleepingMusic.com - AI 助眠音乐播放器",
+    "trending_description": "SleepingMusic.com - AI助眠音乐播放器中前50热门AI歌曲",
+    "newest_title": "最新音乐 | SleepingMusic.com - AI 助眠音乐播放器",
+    "newest_description": "SleepingMusic.com - AI助眠音乐播放器中前50最新AI歌曲",
+    "roaming_title": "随机播放 | SleepingMusic.com - AI 助眠音乐播放器",
+    "roaming_description": "SleepingMusic.com - AI助眠音乐播放器中的50首随机AI歌曲",
+    "song_title": "%s：在 SleepingMusic.com - AI 助眠音乐播放器中的歌曲",
+    "song_description": "%s：由Suno生成的AI歌曲，在SleepingMusic.com - AI助眠音乐播放器中播放"
   },
   "brand": {
     "name": "SleepingMusic.com",
-    "tagline": "AI 音乐播放器"
+    "tagline": "AI 助眠音乐播放器"
   },
   "user": {
     "sign_in": "登录",

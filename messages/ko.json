@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "SleepingMusic.com - AI 음악 플레이어",
-    "description": "SleepingMusic.com는 AI 음악 플레이어 및 생성기입니다. Suno가 생성한 AI 멜로디를 탐색하고, 자신만의 AI 노래를 만들어보세요.",
-    "discover_title": "SleepingMusic.com - AI 음악 플레이어에서 AI 노래 발견하기",
-    "discover_description": "SleepingMusic.com - AI 음악 플레이어에서 트렌딩, 최신, 랜덤 AI 노래 발견하기",
-    "trending_title": "SleepingMusic.com - AI 음악 플레이어의 트렌딩 AI 노래",
-    "trending_description": "SleepingMusic.com - AI 음악 플레이어의 상위 50개 트렌딩 AI 노래",
-    "newest_title": "SleepingMusic.com - AI 음악 플레이어의 최신 AI 노래",
-    "newest_description": "SleepingMusic.com - AI 음악 플레이어의 상위 50개 최신 AI 노래",
-    "roaming_title": "SleepingMusic.com - AI 음악 플레이어의 랜덤 AI 노래",
-    "roaming_description": "SleepingMusic.com - AI 음악 플레이어의 50개 랜덤 AI 노래",
-    "song_title": "%s: SleepingMusic.com - AI 음악 플레이어에서의 AI 노래",
-    "song_description": "%s: Suno가 생성한 AI 노래, SleepingMusic.com - AI 음악 플레이어에서 재생 중"
+    "title": "SleepingMusic.com - AI 조용한 음악 플레이어",
+    "description": "SleepingMusic.com는 AI 조용한 음악 플레이어 및 생성기입니다. Suno가 생성한 AI 멜로디를 탐색하고, 자신만의 AI 노래를 만들어보세요.",
+    "discover_title": "SleepingMusic.com - AI 조용한 음악 플레이어에서 AI 노래 발견하기",
+    "discover_description": "SleepingMusic.com - AI 조용한 음악 플레이어에서 트렌딩, 최신, 랜덤 AI 노래 발견하기",
+    "trending_title": "SleepingMusic.com - AI 조용한 음악 플레이어의 트렌딩 AI 노래",
+    "trending_description": "SleepingMusic.com - AI 조용한 음악 플레이어의 상위 50개 트렌딩 AI 노래",
+    "newest_title": "SleepingMusic.com - AI 조용한 음악 플레이어의 최신 AI 노래",
+    "newest_description": "SleepingMusic.com - AI 조용한 음악 플레이어의 상위 50개 최신 AI 노래",
+    "roaming_title": "SleepingMusic.com - AI 조용한 음악 플레이어의 랜덤 AI 노래",
+    "roaming_description": "SleepingMusic.com - AI 조용한 음악 플레이어의 50개 랜덤 AI 노래",
+    "song_title": "%s: SleepingMusic.com - AI 조용한 음악 플레이어에서의 AI 노래",
+    "song_description": "%s: Suno가 생성한 AI 노래, SleepingMusic.com - AI 조용한 음악 플레이어에서 재생 중"
   },
   "brand": {
     "name": "SleepingMusic.com",
-    "tagline": "AI 음악 플레이어, AI 생성 노래 발견하기"
+    "tagline": "AI 조용한 음악 플레이어, AI 생성 노래 발견하기"
   },
   "user": {
     "sign_in": "로그인",

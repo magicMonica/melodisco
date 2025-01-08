@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "SleepingMusic.com - AI Musikplayer",
-    "description": "SleepingMusic.com ist ein AI Musikplayer und Generator. Entdecken Sie von Suno generierte AI-Melodien und erstellen Sie Ihre eigenen AI-Songs.",
-    "discover_title": "Entdecken Sie AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "discover_description": "Entdecken Sie trendige, neueste und zufällige AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "trending_title": "Trendige AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "trending_description": "Top 50 trendige AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "newest_title": "Neueste AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "newest_description": "Top 50 neueste AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "roaming_title": "Zufällige AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "roaming_description": "50 zufällige AI-Songs in SleepingMusic.com - AI Musikplayer",
-    "song_title": "%s: AI-Song in SleepingMusic.com - AI Musikplayer",
-    "song_description": "%s: Von Suno generierter AI-Song, gespielt in SleepingMusic.com - AI Musikplayer"
+    "title": "SleepingMusic.com - AI Schlafmusik-Player",
+    "description": "SleepingMusic.com ist ein AI Schlafmusik-Player und Generator. Entdecken Sie von Suno generierte AI-Melodien und erstellen Sie Ihre eigenen AI-Songs.",
+    "discover_title": "Entdecken Sie AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "discover_description": "Entdecken Sie trendige, neueste und zufällige AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "trending_title": "Trendige AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "trending_description": "Top 50 trendige AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "newest_title": "Neueste AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "newest_description": "Top 50 neueste AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "roaming_title": "Zufällige AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "roaming_description": "50 zufällige AI-Schlaflieder in SleepingMusic.com - AI Schlafmusik-Player",
+    "song_title": "%s: AI-Schlaflied in SleepingMusic.com - AI Schlafmusik-Player",
+    "song_description": "%s: Von Suno generiertes AI-Schlaflied, gespielt in SleepingMusic.com - AI Schlafmusik-Player"
   },
   "brand": {
     "name": "SleepingMusic.com",
-    "tagline": "AI Musikplayer, entdecken Sie AI-generierte Songs"
+    "tagline": "AI Schlafmusik-Player, entdecken Sie AI-generierte Schlaflieder"
   },
   "user": {
     "sign_in": "Anmelden",

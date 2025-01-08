@@ -1,21 +1,21 @@
 {
   "metadata": {
-    "title": "SleepingMusic.com - AI音楽プレーヤー",
-    "description": "SleepingMusic.comはAI音楽プレーヤーおよびジェネレーターです。Sunoによって生成されたAIメロディーを探索し、自分自身のAIソングを作成しましょう。",
-    "discover_title": "SleepingMusic.com - AI音楽プレーヤーでAIソングを発見",
-    "discover_description": "SleepingMusic.com - AI音楽プレーヤーでトレンディング、最新、ランダムなAIソングを発見",
-    "trending_title": "SleepingMusic.com - AI音楽プレーヤーのトレンディングAIソング",
-    "trending_description": "SleepingMusic.com - AI音楽プレーヤーのトップ50トレンディングAIソング",
-    "newest_title": "SleepingMusic.com - AI音楽プレーヤーの最新AIソング",
-    "newest_description": "SleepingMusic.com - AI音楽プレーヤーのトップ50最新AIソング",
-    "roaming_title": "SleepingMusic.com - AI音楽プレーヤーのランダムAIソング",
+    "title": "SleepingMusic.com - AI助眠音楽プレーヤー",
+    "description": "SleepingMusic.comはAI助眠音楽プレーヤーおよびジェネレーターです。Sunoによって生成されたAIメロディーを探索し、自分自身のAIソングを作成しましょう。",
+    "discover_title": "SleepingMusic.com - AI助眠音楽プレーヤーでAIソングを発見",
+    "discover_description": "SleepingMusic.com - AI助眠音楽プレーヤーでトレンディング、最新、ランダムなAIソングを発見",
+    "trending_title": "SleepingMusic.com - AI助眠音楽プレーヤーのトレンディングAIソング",
+    "trending_description": "SleepingMusic.com - AI助眠音楽プレーヤーのトップ50トレンディングAIソング",
+    "newest_title": "SleepingMusic.com - AI助眠音楽プレーヤーの最新AIソング",
+    "newest_description": "SleepingMusic.com - AI助眠音楽プレーヤーのトップ50最新AIソング",
+    "roaming_title": "SleepingMusic.com - AI助眠音楽プレーヤーのランダムAIソング",
     "roaming_description": "SleepingMusic.com - AI音楽プレーヤーのランダム50AIソング",
-    "song_title": "%s：SleepingMusic.com - AI音楽プレーヤーでのAIソング",
-    "song_description": "%s：Sunoによって生成されたAIソング、SleepingMusic.com - AI音楽プレーヤーで再生中"
+    "song_title": "%s：SleepingMusic.com - AI助眠音楽プレーヤーでのAIソング", 
+    "song_description": "%s：Sunoによって生成されたAIソング、SleepingMusic.com - AI助眠音楽プレーヤーで再生中"
   },
   "brand": {
     "name": "SleepingMusic.com",
-    "tagline": "AI音楽プレーヤー、AI生成ソングを発見"
+    "tagline": "AI助眠音楽プレーヤー、AI生成ソングを発見"
   },
   "user": {
     "sign_in": "サインイン",
