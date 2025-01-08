@@ -4,6 +4,8 @@ import Markdown from "../../[locale]/(default)/_components/markdown";
 import { MdOutlineHome } from "react-icons/md";
 import { Metadata } from "next";
 
+export const runtime = "edge";
+
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Privacy Policy",
@@ -14,11 +16,11 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function () {
-  const content = `# Melodisco Privacy Policy
+  const content = `# SleepingMusic.com Privacy Policy
 
 Effective Date: April 8, 2024
 
-At Melodisco, we are committed to protecting the privacy and security of our users. This Privacy Policy describes the types of information we may collect from you or that you may provide when you use our service and our practices for collecting, using, maintaining, protecting, and disclosing that information.
+At SleepingMusic.com, we are committed to protecting the privacy and security of our users. This Privacy Policy describes the types of information we may collect from you or that you may provide when you use our service and our practices for collecting, using, maintaining, protecting, and disclosing that information.
 
 ## Information We Collect
 

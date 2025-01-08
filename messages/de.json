@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "title": "Melodisco - AI Musikplayer",
-    "description": "Melodisco ist ein AI Musikplayer und Generator. Entdecken Sie von Suno generierte AI-Melodien und erstellen Sie Ihre eigenen AI-Songs.",
-    "discover_title": "Entdecken Sie AI-Songs in Melodisco - AI Musikplayer",
-    "discover_description": "Entdecken Sie trendige, neueste und zufällige AI-Songs in Melodisco - AI Musikplayer",
-    "trending_title": "Trendige AI-Songs in Melodisco - AI Musikplayer",
-    "trending_description": "Top 50 trendige AI-Songs in Melodisco - AI Musikplayer",
-    "newest_title": "Neueste AI-Songs in Melodisco - AI Musikplayer",
-    "newest_description": "Top 50 neueste AI-Songs in Melodisco - AI Musikplayer",
-    "roaming_title": "Zufällige AI-Songs in Melodisco - AI Musikplayer",
-    "roaming_description": "50 zufällige AI-Songs in Melodisco - AI Musikplayer",
-    "song_title": "%s: AI-Song in Melodisco - AI Musikplayer",
-    "song_description": "%s: Von Suno generierter AI-Song, gespielt in Melodisco - AI Musikplayer"
+    "title": "SleepingMusic.com - AI Musikplayer",
+    "description": "SleepingMusic.com ist ein AI Musikplayer und Generator. Entdecken Sie von Suno generierte AI-Melodien und erstellen Sie Ihre eigenen AI-Songs.",
+    "discover_title": "Entdecken Sie AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "discover_description": "Entdecken Sie trendige, neueste und zufällige AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "trending_title": "Trendige AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "trending_description": "Top 50 trendige AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "newest_title": "Neueste AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "newest_description": "Top 50 neueste AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "roaming_title": "Zufällige AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "roaming_description": "50 zufällige AI-Songs in SleepingMusic.com - AI Musikplayer",
+    "song_title": "%s: AI-Song in SleepingMusic.com - AI Musikplayer",
+    "song_description": "%s: Von Suno generierter AI-Song, gespielt in SleepingMusic.com - AI Musikplayer"
   },
   "brand": {
-    "name": "Melodisco",
+    "name": "SleepingMusic.com",
     "tagline": "AI Musikplayer, entdecken Sie AI-generierte Songs"
   },
   "user": {

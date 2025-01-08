@@ -7,6 +7,8 @@ import Stripe from "stripe";
 import { findUserByUuid } from "@/models/user";
 import { genOrderNo } from "@/utils/order";
 
+export const runtime = "edge";
+
 export const maxDuration = 120;
 
 export async function POST(req: Request) {
@@ -85,7 +87,7 @@ export async function POST(req: Request) {
       ],
       allow_promotion_codes: false,
       metadata: {
-        project: "melodisco",
+        project: "SleepingMusic.com",
         pay_scene: "buy-credits",
         order_no: order_no.toString(),
         user_email: user_email,
