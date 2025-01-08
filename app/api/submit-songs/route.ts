@@ -6,7 +6,7 @@ import { formatSong } from "@/services/song";
 import { getSongInfo } from "@/services/suno";
 import { getUserUuid } from "@/services/user";
 
-export const maxDuration = 120;
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   try {

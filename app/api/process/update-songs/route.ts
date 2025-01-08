@@ -3,7 +3,7 @@ import { respData, respErr } from "@/utils/resp";
 
 export const runtime = "edge";
 
-export const maxDuration = 120;
+export const maxDuration = 60;
 
 export async function POST() {
   try {

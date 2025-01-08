@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 
 export const runtime = "edge";
 
-export const maxDuration = 120;
+export const maxDuration = 60;
 
 export default async function ({ params }: { params: { uuid: string } }) {
   let song: Song | null = null;

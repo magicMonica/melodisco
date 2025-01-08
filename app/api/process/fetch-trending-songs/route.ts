@@ -7,7 +7,7 @@ import { getTrendingSongs as getUdioTrendingSongs } from "@/services/udio";
 
 export const runtime = "edge";
 
-export const maxDuration = 120;
+export const maxDuration = 60;
 
 export async function POST(req: Request) {
   try {
