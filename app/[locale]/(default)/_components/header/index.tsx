@@ -54,7 +54,7 @@ export default function () {
   }, [user]);
 
   return (
-    <header className="flex h-16 left-0 md:left-[236px] right-0 fixed bg-base-100 z-50 items-center border-b border-base-300 gap-4 px-4 lg:h-[80px] lg:px-6">
+    <header className="flex h-16 left-0 md:left-[255px] right-0 fixed bg-base-100 z-50 items-center border-b border-base-300 gap-4 px-4 lg:h-[80px] lg:px-6">
       <Sheet open={isSiderOpen} onOpenChange={setIsSiderOpen}>
         <SheetTrigger asChild>
           <Button

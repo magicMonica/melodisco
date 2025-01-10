@@ -5,7 +5,7 @@ import { useState } from "react";
 import { MdSearch } from "react-icons/md";
 import { useTranslations } from "next-intl";
 
-export default function Search({ value }: { value: string }) {
+export default function Search({ value = "" }: { value?: string }) {
   const router = useRouter();
   const t = useTranslations("nav");
   const [keyword, setKeyword] = useState("");
