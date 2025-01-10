@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function () {
   const content = `# SleepingMusic.org Terms of Service
 
-Effective Date: April 8, 2024
+Effective Date: January 4, 2025
 
 Thank you for choosing SleepingMusic.org. These Terms of Service ("Terms") are a legal agreement between you and SleepingMusic.org and govern your use of the SleepingMusic.org services including our website, mobile apps, and other features or services (collectively, the "Service"). By using the Service, you agree to be bound by these Terms. If you do not agree to these Terms, you must not use the Service.
 

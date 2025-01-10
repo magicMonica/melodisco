@@ -20,11 +20,26 @@ export async function POST(req: Request) {
 
       if (song && song.uuid) {
         song.provider = "suno";
-        const existSong = await findByUuid(song.uuid);
+        let existSong;
+        
+        try {
+          existSong = await findByUuid(song.uuid);
+        } catch (error: any) {
+          // 处理 PGRST116 错误（未找到记录）
+          if (error?.code !== 'PGRST116') {
+            throw error; // 重新抛出非 PGRST116 错误
+          }
+          // 如果是 PGRST116，existSong 保持为 undefined
+        }
+
         if (existSong) {
-          updateSong(song);
+          song.play_count = Math.floor(Math.random() * 10000) + 30;
+          song.upvote_count = Math.floor(song.play_count / 4 + 3);
+          if(existSong?.play_count !== undefined && existSong.play_count < 100){
+            await updateSong(song);
+          }
         } else {
-          insertRow(song);
+          await insertRow(song);
         }
 
         songs.push(song);
@@ -33,7 +48,7 @@ export async function POST(req: Request) {
 
     return respData(songs);
   } catch (e) {
-    console.log("submit songs failed:", e);
+    console.error("submit songs failed:", e);
     return respErr("submit songs failed");
   }
 }

@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function () {
   const content = `# SleepingMusic.org Privacy Policy
 
-Effective Date: April 8, 2024
+Effective Date: January 4, 2025
 
 At SleepingMusic.org, we are committed to protecting the privacy and security of our users. This Privacy Policy describes the types of information we may collect from you or that you may provide when you use our service and our practices for collecting, using, maintaining, protecting, and disclosing that information.
 

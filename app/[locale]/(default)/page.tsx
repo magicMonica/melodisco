@@ -2,6 +2,7 @@ import {
   MdLocalFireDepartment,
   MdOutlineRadio,
   MdOutlineRssFeed,
+  MdSearch,
 } from "react-icons/md";
 import {
   getLatestSongs,
@@ -12,6 +13,7 @@ import {
 import { Metadata } from "next";
 import Scroll from "./_components/playlist/scroll";
 import { getTranslations } from "next-intl/server";
+import Search from "@/components/ui/search";
 
 export const runtime = "edge";
 
@@ -47,6 +49,9 @@ export default async function () {
   return (
     <div className="w-full md:max-w-6xl mx-auto">
       <h1 className="text-2xl font-semibold tracking-tight">{t("discover")}</h1>
+      <div className="mt-4 mb-6">
+        <Search />
+      </div>
 
       <div className="mt-8">
         <h2 className="text-xl font-semibold tracking-tight flex items-center gap-x-2">

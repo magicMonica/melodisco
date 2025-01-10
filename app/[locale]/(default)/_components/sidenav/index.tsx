@@ -28,12 +28,6 @@ export default function () {
   const pathname = usePathname();
   const musicNavs: Nav[] = [
     {
-      title: t("discover"),
-      url: `/`,
-      icon: <MdMusicNote className="text-lg" />,
-      active: pathname === "/" || pathname === `/${params.locale}`,
-    },
-    {
       title: t("trending"),
       url: "/trending",
       icon: <MdLocalFireDepartment className="text-lg" />,
@@ -50,6 +44,12 @@ export default function () {
       url: "/roaming",
       icon: <MdOutlineRadio className="text-lg" />,
       active: pathname.endsWith("roaming"),
+    },
+    {
+      title: t("discover"),
+      url: `/discover`,
+      icon: <MdMusicNote className="text-lg" />,
+      active: pathname.includes("discover"),
     },
     // {
     //   title: t("playlists"),
