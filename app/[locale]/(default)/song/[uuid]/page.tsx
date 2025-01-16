@@ -31,7 +31,11 @@ export async function generateMetadata({
   let song = await findByUuid(params.uuid);
   if (song) {
     title = t("song_title").replace("%s", song.title || "");
-    description = t("song_description").replace("%s", song.title || "");
+    if (song.tags && song.tags.trim() !== "") {
+      description = song.title + "：" + song.tags;
+    }else{
+      description = t("song_description").replace("%s", song.title || "");
+    }
     if (song.provider === "udio") {
       description = description.replace("Suno", "Udio");
     }
@@ -44,6 +48,24 @@ export async function generateMetadata({
       canonical: `${process.env.NEXTAUTH_URL}/${
         params.locale !== "en" ? params.locale + "/" : ""
       }song/${params.uuid}`,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    openGraph: {
+      title: title,
+      description: description,
+      url: `${process.env.NEXTAUTH_URL}/${params.locale !== "en" ? params.locale + "/" : ""}song/${params.uuid}`,
+      siteName: 'SleepingMusic.org', // 替换为你的网站名称
+      type: 'website',
     },
   };
 }

@@ -36,3 +36,4 @@ Disallow: /fr/pricing
 Disallow: /de/pricing
 Disallow: /en/pricing
 Disallow: /ar/pricing
+Sitemap: https://www.sleepingmusic.org/sitemap.xml
