@@ -27,14 +27,16 @@ export default function Search({ value = "" }: { value?: string }) {
       <div className="relative flex-1 max-w-md">
         <input
           type="text"
-          className="w-full px-4 py-2 pl-10 bg-base-200 border-base-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+          className="w-full px-4 py-2 pl-10 bg-base-200/50 border border-base-300 rounded-lg 
+          focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-800/50 
+          dark:border-gray-700 dark:focus:border-primary"
           placeholder={value}
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
           onKeyPress={handleKeyPress}
         />
         <MdSearch 
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/50" 
+          className="absolute left-3 top-1/2 -translate-y-1/2 text-base-content/60" 
           size={20}
         />
       </div>
