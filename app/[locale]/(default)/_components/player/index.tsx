@@ -20,6 +20,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { AiOutlineSound } from "react-icons/ai";
 import Image from "next/image";
 import Share from "../share";
+import Download from "../download";
 import { Slider } from "@/components/ui/slider";
 import { Song } from "@/types/song";
 import { useAppContext } from "@/contexts/app";
@@ -530,7 +531,7 @@ export default function () {
               <button className="mx-2">
                 <Share song={song} />
               </button>
-
+              <Download song={song} isPlayer={true} />
               <button className="mx-2" onClick={() => setVolume(0)}>
                 <AiOutlineSound className="text-xl" />
               </button>

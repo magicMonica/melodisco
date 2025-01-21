@@ -1,11 +1,12 @@
 "use client";
 
-import { MdHeadset, MdOutlinePlayArrow } from "react-icons/md";
+import { MdHeadset, MdOutlinePlayArrow, MdOutlineDownload } from "react-icons/md";
 
 import { AiOutlineLike } from "react-icons/ai";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Share from "../share";
+import Download from "../download";
 import { Song } from "@/types/song";
 import moment from "moment";
 import { useAppContext } from "@/contexts/app";
@@ -21,6 +22,34 @@ export default function ({ song }: { song: Song }) {
     appendPlaylist(song);
     setCurrentSong(song);
     setCurrentSongIndex(0);
+  };
+
+  const downloadSong = async (uuid: string) => {
+    try {
+      const response = await fetch('/api/download-song', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ uuid }),
+      });
+
+      if (!response.ok) {
+        throw new Error('下载失败');
+      }
+
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${song.title || 'song'}.mp3`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+      a.remove();
+    } catch (error) {
+      console.error('下载出错:', error);
+    }
   };
 
   return (
@@ -87,12 +116,7 @@ export default function ({ song }: { song: Song }) {
           >
             <Share song={song} />
           </Button>
-          {/* <Button
-            size="sm"
-            className="hidden md:flex items-center gap-x-1 bg-base-300 text-base-content"
-          >
-            <MdOutlineDownload className="text-2xl" />
-          </Button> */}
+          <Download song={song} />
         </div>
       </div>
     </div>

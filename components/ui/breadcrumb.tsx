@@ -15,15 +15,23 @@ Breadcrumb.displayName = "Breadcrumb"
 const BreadcrumbList = React.forwardRef<
   HTMLOListElement,
   React.ComponentPropsWithoutRef<"ol">
->(({ className, ...props }, ref) => (
+>(({ className, children, ...props }, ref) => (
   <ol
     ref={ref}
     className={cn(
       "flex flex-wrap items-center gap-1.5 break-words text-sm text-muted-foreground sm:gap-2.5",
       className
     )}
-    {...props}
-  />
+  >
+    {React.Children.map(children, (child, index) => {
+      if (React.isValidElement(child)) {
+        return React.cloneElement(child, {
+          key: child.key || `breadcrumb-item-${index}`,
+        });
+      }
+      return child;
+    })}
+  </ol>
 ))
 BreadcrumbList.displayName = "BreadcrumbList"
 
