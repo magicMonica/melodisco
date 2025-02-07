@@ -6,14 +6,14 @@ import { getUserUuid } from "@/services/user";
 
 export async function POST(req: Request) {
   try {
-    const user_uuid = await getUserUuid();
-    if (!user_uuid) {
-      return respErr("no auth");
-    }
-
     const { uuid } = await req.json();
     if (!uuid) {
       return respErr("invalid params");
+    }
+
+    const user_uuid = await getUserUuid();
+    if (!user_uuid) {
+      return respErr("no auth");
     }
 
     let song = await findByUuid(uuid);

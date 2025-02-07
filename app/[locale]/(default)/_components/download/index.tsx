@@ -4,10 +4,28 @@ import { MdOutlineDownload } from "react-icons/md";
 import { Button } from "@/components/ui/button";
 import { Song } from "@/types/song";
 import { toast } from "sonner";
+import { useAppContext } from "@/contexts/app";
+import { useState } from 'react';
 
 export default function Download({ song , isPlayer = false }: { song: Song , isPlayer?: boolean }) {
-  const downloadSong = async (uuid: string) => {
+    const [isDownloading, setIsDownloading] = useState(false);
+    const {
+        user,
+        playlist,
+        currentSong,
+        setCurrentSong,
+        currentSongIndex,
+        setCurrentSongIndex,
+        setIsShowSignPanel,
+      } = useAppContext();
+    const downloadSong = async (uuid: string) => {
     try {
+      if (!user || !user.uuid) {
+        setIsShowSignPanel(true);
+        return;
+      }
+
+      setIsDownloading(true);
       const response = await fetch('/api/download-song', {
         method: 'POST',
         headers: {
@@ -15,10 +33,6 @@ export default function Download({ song , isPlayer = false }: { song: Song , isP
         },
         body: JSON.stringify({ uuid }),
       });
-
-      if (!response.ok) {
-        throw new Error('下载失败');
-      }
 
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
@@ -34,13 +48,24 @@ export default function Download({ song , isPlayer = false }: { song: Song , isP
     } catch (error) {
       console.error('下载出错:', error);
       toast.error('下载失败');
+    } finally {
+      setIsDownloading(false);
     }
   };
 
   if (isPlayer) {
     return (
-      <button className="mx-2" onClick={() => downloadSong(song.uuid)}>
-        <MdOutlineDownload className="text-xl" />
+      <button 
+        className="mx-2 relative" 
+        onClick={() => downloadSong(song.uuid)}
+        disabled={isDownloading}
+      >
+        <MdOutlineDownload className={`text-xl ${isDownloading ? 'opacity-50' : ''}`} />
+        {isDownloading && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="animate-spin h-4 w-4 border-2 border-primary border-t-transparent rounded-full" />
+          </div>
+        )}
       </button>
     );
   }
@@ -48,10 +73,16 @@ export default function Download({ song , isPlayer = false }: { song: Song , isP
   return (
     <Button
       size="sm"
-      className="hidden md:flex items-center gap-x-1 bg-base-300 text-base-content"
+      className="hidden md:flex items-center gap-x-1 bg-base-300 text-base-content relative"
       onClick={() => downloadSong(song.uuid)}
+      disabled={isDownloading}
     >
-      <MdOutlineDownload className="text-2xl" />
+      <MdOutlineDownload className={`text-2xl ${isDownloading ? 'opacity-50' : ''}`} />
+      {isDownloading && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="animate-spin h-4 w-4 border-2 border-primary border-t-transparent rounded-full" />
+        </div>
+      )}
     </Button>
   );
 }
